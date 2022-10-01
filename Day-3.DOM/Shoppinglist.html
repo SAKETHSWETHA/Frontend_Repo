@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping List</title>
+    </head>
+
+    <body>
+        <h1>My Shopping List</h1>
+        <div>
+            Enter a new item: 
+            <input type="text" id="item">
+            <button id="btn">Add item</button>
+        </div>
+        <ul>
+
+        </ul>
+
+        <script>
+        const input = document.querySelector("input");
+        const button = document.querySelector("button");
+        const list = document.querySelector("ul");
+        button.addEventListener("click",()=>
+        {
+
+           const item=input.value;
+            input.value=""; //Empty the value after setting it to a item;
+            //Now after clicking on button we should display a list with values and delete button next to the value of list 
+            // so we need to create 3 elements with tags of li,span,button to display list,list values and button respectively
+           //This is the method to create a list
+           const li = document.createElement("li");
+           const span = document.createElement("span"); // create a span tag instead of paragraph tag to have the list value and button in the same line
+           const b = document.createElement("button");
+           li.appendChild(span);
+           span.textContent = item;
+           li.appendChild(b);
+           b.textContent="delete";
+           list.appendChild(li);
+
+           b.addEventListener("click",()=>{
+            list.removeChild(li);
+           });
+           
+        });
+        </script>
+    </body>
+</html>

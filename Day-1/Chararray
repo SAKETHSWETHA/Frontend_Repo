@@ -1,0 +1,24 @@
+
+//array of characters using for loop
+function char(str){
+    var arr=[];
+    for(let i=0;i<str.length;i++){
+       arr[i]=str[i]+" "
+    }
+    return arr;
+}
+str="saketh"
+console.log(char(str));
+
+//array of characters using for of loop
+/*
+function char(str){
+    var arr=[];
+    for(let i of str){
+       arr+=i;
+    }
+    return arr;
+}
+str="saketh"
+console.log(char(str));
+*/

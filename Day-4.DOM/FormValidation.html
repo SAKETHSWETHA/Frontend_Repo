@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student form</title>
+        <link rel="stylesheet" href="FormValidation.css" >
+    </head>
+    <body style="background-color:skyblue">
+        <script src="FormValidation.js"></script>
+     <form style="background-color:#90EE90"> 
+      <fieldset>
+          <legend>Personal information:</legend>  
+     <label for="fname">First name*:</label>
+     <input type="text" id="fname" ><br><br>
+    
+      <label for="lname">Last name*:</label>
+     <input type="text" id="lname"><br><br>
+
+     <label for="gender">Gender*:</label><br>
+     <input type="radio" >
+     <label>Male</label><br>
+     <input type="radio">
+     <label>Female</label><br>
+     <input type="radio">
+     <label>Other</label><br><br>
+
+     
+     <label for="DOB">Date of Birth*:</label>
+     <input type="date" id="DOB" placeholder="dd-mm-yyyy"b ><br><br>
+
+     <label for="age"> Age(between 18 and 22)*: </label>
+     <input type="number" id="age" min="18" max="22" value=18 ><br><br> 
+
+     <label for="mail">Email*:</label>
+     <input type="email" id="mail" placeholder="abc@gmail.com" ><br><br>
+
+     <label for="Contact">Personal Phone Number*: </label>
+     <input type="tel" id="Contact" size="10" ><br><br>
+
+     <label for="linked-in">Linked-in profile*:</label>
+     <input type="url" id="linked-in" ><br><br>
+     
+     <label for="col">Your favourite color:</label>
+     <input type="color" id="col"><br><br>
+      </fieldset><br><br> 
+
+      <fieldset>
+          <legend>Education Qualification:</legend>
+     <input type="checkbox" >
+     <label>B.tech</label>
+     <select>
+         <option>BCE</option>
+         <option>BCB</option>
+         <option>BCI</option>
+         <option>BEC</option>
+         <option>BEE</option>
+         <option>BIT</option>
+     </select><br><br>
+     <input type="checkbox" >
+     <label>M.tech</label>
+     <select>
+        <option>BCE</option>
+        <option>BCB</option>
+        <option selected>BCI</option>
+        <option>BEC</option>
+        <option>BEE</option>
+        <option>BIT</option>
+    </select><br><br>
+     
+    <label for="Interest">Area of Interest:*</label>
+    <input type=text id="Interest" ><br><br>
+</fieldset><br><br>
+
+<fieldset>
+    <legend>Job Details:</legend>
+    <label for="exp">Experience:</label>
+    <input type="range" id="exp" min="1" max="100"><br><br>
+
+    <textarea rows="10" cols="100">Job Description</textarea><br><br>
+</fieldset><br><br>
+
+    <label for="photo">Passport Size Photo*: </label>
+    <input type="file" id="passportfile"> <br><br>
+    <label for="photo">Upload Your Aadhar*: </label>
+    <input type="file" id="aadharfile" ><br><br><br><br>
+
+    <input  type="submit" value="Don't Validate" id="validate"><br><br>
+    <input  type="submit" value="Submit Using Javascript Validation" id="jsvalidate"><br><br>
+ <input  type="submit" value="Submit Using PHP Validation" id="phpvalidate"><br><br>
+ <input type="reset" value="Form Reset" id="reset"><br><br>
+    
+     </form>
+     
+
+
+    </body>
+</html>

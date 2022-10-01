@@ -1,0 +1,116 @@
+legend
+{
+background-color:darkorchid;
+}
+
+#fname
+{
+    margin-left:100px;
+    background-color:#FFFF00;
+    border-radius:6px 0px 0px 6px;
+}
+#lname
+{
+    margin-left:103px;
+    background-color:#FFFF00;
+    border-radius:6px 0px 0px 6px;
+}
+input[type="radio"]
+{
+    margin-left: 200px;
+    margin-top: 2px;
+    border-radius:6px 0px 0px 6px;
+}
+#DOB
+{
+    margin-left:85px;
+    background-color:#FFFF00;
+    border-radius:6px 0px 0px 6px;
+}
+#age
+{
+    margin-left:10px;
+    background-color:#FFFF00;
+    border-radius:6px 0px 0px 6px;
+}
+#mail
+{
+    margin-left:130px;
+    background-color:#FFFF00;
+    border-radius:6px 0px 0px 6px;
+}
+#Contact
+{
+    margin-left:15px;
+    background-color:#FFFF00;
+    width:150px;
+    border-radius:6px 0px 0px 6px;
+}
+#linked-in
+{
+    margin-left:60px;
+    background-color:#FFFF00;
+    border-radius:6px 0px 0px 6px; 
+}
+#col
+{
+    margin-left:45px;
+    background-color:#FFFF00;
+    border-radius:6px 0px 0px 6px;
+}
+input[type="checkbox"]
+{
+    margin-left:180px ;
+    
+}
+#Interest
+{
+    margin-left:65px;
+    background-color:#FFFF00;
+    border-radius:6px 0px 0px 6px;
+}
+textarea{
+    width:100%
+    
+}
+#exp
+{
+    margin-left:100px; 
+}
+#passportfile
+{
+ margin-left:45px ;
+ background-color: deepskyblue;
+ border-radius:16px;
+}
+#aadharfile
+{
+    margin-left:40px ;
+    background-color: deepskyblue;
+    border-radius:16px;
+}
+#validate
+{
+border-radius:16px;
+background-color: deepskyblue;
+margin-left:150px;
+}
+#jsvalidate
+{
+    border-radius:16px; 
+    background-color: #00FF7F;
+    margin-left:150px;
+}
+#phpvalidate
+{
+    border-radius:16px; 
+    background-color: deepskyblue;
+    margin-left:150px;
+}
+#reset
+{
+border-radius:16px; 
+background-color:#00FF7F;
+margin-left:150px;
+
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>BMI Calculator</title>
+    </head>
+    <body style="background-color:skyblue">
+        <h1>BMI Calculator</h1>
+        <div>
+            Enter your height(in cm):<input type="text" id="height"><br><br>
+            Enter your Weight(in kg):<input type="text" id="weight"><br><br>
+            <button onclick="CalculateBMI()">Calculate BMI</button><br><br>
+            Your BMI:
+            <input type="text" id="bmi"><br><br>
+            <div id="category"></div>
+        </div>
+        
+
+        
+           <script>
+            function CalculateBMI(){
+                var Height = document.getElementById("height").value;
+                var Weight = document.getElementById("weight").value;
+                Height=Height/100;
+                var bmi = ((Weight)/(Height*Height)).toFixed(1);
+                document.getElementById("bmi").value = bmi;
+                if(bmi<18.5){
+                    document.getElementById("category").innerHTML="UnderWeight";
+                }
+                else if(bmi>=18.5 || bmi<=24.9){
+                document.getElementById("category").innerHTML="NormalWeight";
+                }
+                else if(bmi>=25 || bmi<=29.9){
+                document.getElementById("category").innerHTML="OverWeight";
+                }
+                else{
+                document.getElementById("category").innerHTML="Obesity";
+                }
+              }
+           </script>
+    </body>
+</html>
